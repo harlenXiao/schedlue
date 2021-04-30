@@ -55,6 +55,7 @@
         </i-form-item>
     </i-form> -->
     <i-button type="primary" @click="run">生成排期表</i-button>
+    <h1>手机号收集</h1>
 
     <div class="table-wrap" v-if="tableDateList.length">
       <div class="table">
@@ -91,7 +92,7 @@ export default {
           endDate: null
         },
         {
-          label: '网关',
+          label: '活动系统、网关',
           key: 'gateway',
           value: '',
           startDate: null,
@@ -222,6 +223,10 @@ export default {
 <style lang="scss" scoped>
 .form {
   margin:  0 auto;
+}
+
+h1 {
+  margin-top: 30px;
 }
 .table-wrap {
   width: 90%;
